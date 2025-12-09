@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 Calculator</title>
+</head>
+<body>
+
+    <h2>Simple Calculator</h2>
+
+    <input id="n1" type="number" placeholder="Enter number 1">
+    <input id="n2" type="number" placeholder="Enter number 2">
+
+    <br><br>
+
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mul()">*</button>
+    <button onclick="div()">/</button>
+
+    <p id="output"></p>
+
+    <script>
+        function add() {
+            let a = parseFloat(document.getElementById("n1").value);
+            let b = parseFloat(document.getElementById("n2").value);
+            document.getElementById("output").innerText = "Result: " + (a + b);
+        }
+
+        function sub() {
+            let a = parseFloat(document.getElementById("n1").value);
+            let b = parseFloat(document.getElementById("n2").value);
+            document.getElementById("output").innerText = "Result: " + (a - b);
+        }
+
+        function mul() {
+            let a = parseFloat(document.getElementById("n1").value);
+            let b = parseFloat(document.getElementById("n2").value);
+            document.getElementById("output").innerText = "Result: " + (a * b);
+        }
+
+        function div() {
+            let a = parseFloat(document.getElementById("n1").value);
+            let b = parseFloat(document.getElementById("n2").value);
+            document.getElementById("output").innerText = "Result: " + (a / b);
+        }
+    </script>
+
+</body>
+</html>
